@@ -55,10 +55,5 @@ function getInputValue(product) {
     return productCount;
 }
 
-// Remove Part
-const removeBtn = document.getElementById("remove");
-removeBtn.addEventListener('click', function(){
-const removeArea = document.getElementById("removeArea");
-removeArea.style.display = "none";
-})
+
 
