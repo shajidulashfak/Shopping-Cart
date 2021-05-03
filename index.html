@@ -25,17 +25,18 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" id="iphoneDecrease"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" id="iphoneCount" value="1">
-                           <button class="btn btn-default" id="iphoneIncrease"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handelCountChange('iPhone', false)" id="iPhoneDecrease"><i class="fas fa-minus"></i></button>
+                           <input type="number" class="form-control text-center" id="iPhoneCount" value="1">
+                           <button class="btn btn-default" onclick="handelCountChange('iPhone', true)" id="iPhoneIncrease"><i class="fas fa-plus"></i></button>
+
                         </div>
-                        <h5 id="iphonePrice">$1219</h5>
+                        <h5 id="iPhonePrice">$1219</h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="removeArea">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -43,13 +44,13 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" id="caseDecrease"><i class="fas fa-minus"></i></button>
+                           <button class="btn btn-default" onclick="handelCountChange('case', false)" id="caseDecrease"><i class="fas fa-minus"></i></button>
                            <input type="number" class="form-control text-center" id="caseCount" value="1">
-                           <button class="btn btn-default" id="caseIncrease"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handelCountChange('case',true)" id="caseIncrease"><i class="fas fa-plus"></i></button>
 
                         </div>
                         <h5 id="casePrice">$59</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" id="remove" class="remove-item">
                      </div>
                   </div>
                </div>
@@ -58,15 +59,17 @@
                   <div class="row">
 
                      <div class="col-md-8">
-                        <h5>Subtotal: </h5>
-                        <h5>Tax:</h5>
-                        <h5>Total:</h5>
+                        <h5>Subtotal : </h5>
+                        <h5>Tax 15% :</h5>
+                        <hr>
+                        <h5>Total :</h5>
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5 id="total-Price">$1,278</h5>
+                        <h5 id="taxValue">$192</h5>
+                        <hr>
+                        <h5 id="net-total">$1,470</h5>
                      </div>
                   </div>
                </div>
